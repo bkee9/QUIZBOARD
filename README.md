@@ -27,4 +27,4 @@ bkee9.github.io/quizboard/
 ## SUPPORT DETAILS
 You can reach out to me via email(nancymwende860@gmail.com)
                         or
-          through 0746451157              
+          through              
