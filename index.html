@@ -1,123 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>QUIZBOARD</title>
 </head>
+
 <body>
     <div class="">
         <h1 class="text-info">Quiz Board</h1>
         <a href="/">
-          <h1>Home</h1>
+            <h1>Home</h1>
         </a>
         <div id="begin">
-          <p class="holder">
-            <button type="button" id="start" class="" name="button">Start Test</button>
-          </p>
+            <p class="holder">
+                <button type="button" id="start" class="" name="button">Start Test</button>
+            </p>
         </div>
 
         <div class="">
             <div id="questions">
-              <div class="form-group">
-                <form id="quiz">
-                  <h4>javaScript Test</h4>
-              
-                  1. <label for="Quiz1">IsNaN() Evaluates And Argument To Determine if Given Value:
-                    <strong>(1mk)</strong></label><br>
-                  <input type="radio" name="Quiz1" value="0" required>Is Not a Null <br>
-                  <input type="radio" name="Quiz1" value="1">Is Not a Number <br>
-                  <input type="radio" name="Quiz1" value="0">Is Not a New Object <br>
-                  <input type="radio" name="Quiz1" value="0">None Of The Above <br>
-              
-                  2. <label for="Quiz2">If Button is clicked .......Event Handler is invoked. <strong>(1mk)</strong></label><br>
-                  <input type="radio" name="Quiz2" value="0" required>OnSubmit()<br>
-                  <input type="radio" name="Quiz2" value="1">Onclick() <br>
-                  <input type="radio" name="Quiz2" value="0">OnLoad()() <br>
-                  <input type="radio" name="Quiz2" value="0">sPostBack() <br>
-                  
-                  3. <label for="Quiz3">A Function Associated With An object is Called: <strong>(1mk)</strong></label><br>
-                  <input type="radio" name="Quiz3" value="1" required>Method<br>
-                  <input type="radio" name="Quiz3" value="0">Function<br>
-                  <input type="radio" name="Quiz3" value="0">Link<br>
-                  <input type="radio" name="Quiz3" value="0">None<br>
-                
-                  4. <label for="Quiz4">Method Prompt() Contain ........Number of Parameters.<strong>(1mk)</strong></label><br>
-                  <input type="radio" name="Quiz4" value="0" required>One <br>
-                  <input type="radio" name="Quiz4" value="1">Two <br>
-                  <input type="radio" name="Quiz4" value="0">Three <br>
-                  <input type="radio" name="Quiz4" value="0">None <br>
-                  
-                  5. <label for="Quiz5">JavaScript File Has An Extension of:<strong>(1mk)</strong></label><br>
-                  <input type="radio" name="Quiz5" value="0" required>.javascript<br>
-                  <input type="radio" name="Quiz5" value="0">.script <br>
-                  <input type="radio" name="Quiz5" value="0">.java <br>
-                  <input type="radio" name="Quiz5" value="1">.js <br>
-                  
-                  <button type="submit" class="btn btn-info" name="button">Submit</button>
-                </form>
-              </div>
+                <div class="form-group">
+                    <form id="quiz">
+                        <h4>javaScript Test</h4>
+
+                        1. <label for="Quiz1">IsNaN() Evaluates And Argument To Determine if Given Value:
+                            <strong>(1mk)</strong></label><br>
+                        <input type="radio" name="Quiz1" value="0" required>Is Not a Null <br>
+                        <input type="radio" name="Quiz1" value="1">Is Not a Number <br>
+                        <input type="radio" name="Quiz1" value="0">Is Not a New Object <br>
+                        <input type="radio" name="Quiz1" value="0">None Of The Above <br>
+
+                        2. <label for="Quiz2">If Button is clicked .......Event Handler is invoked.
+                            <strong>(1mk)</strong></label><br>
+                        <input type="radio" name="Quiz2" value="0" required>OnSubmit()<br>
+                        <input type="radio" name="Quiz2" value="1">Onclick() <br>
+                        <input type="radio" name="Quiz2" value="0">OnLoad()() <br>
+                        <input type="radio" name="Quiz2" value="0">sPostBack() <br>
+
+                        3. <label for="Quiz3">A Function Associated With An object is Called:
+                            <strong>(1mk)</strong></label><br>
+                        <input type="radio" name="Quiz3" value="1" required>Method<br>
+                        <input type="radio" name="Quiz3" value="0">Function<br>
+                        <input type="radio" name="Quiz3" value="0">Link<br>
+                        <input type="radio" name="Quiz3" value="0">None<br>
+
+                        4. <label for="Quiz4">Method Prompt() Contain ........Number of
+                            Parameters.<strong>(1mk)</strong></label><br>
+                        <input type="radio" name="Quiz4" value="0" required>One <br>
+                        <input type="radio" name="Quiz4" value="1">Two <br>
+                        <input type="radio" name="Quiz4" value="0">Three <br>
+                        <input type="radio" name="Quiz4" value="0">None <br>
+
+                        5. <label for="Quiz5">JavaScript File Has An Extension of:<strong>(1mk)</strong></label><br>
+                        <input type="radio" name="Quiz5" value="0" required>.javascript<br>
+                        <input type="radio" name="Quiz5" value="0">.script <br>
+                        <input type="radio" name="Quiz5" value="0">.java <br>
+                        <input type="radio" name="Quiz5" value="1">.js <br>
+
+                        <button type="submit" class="" name="button">Submit</button>
+                        <input type="text" id="Remarks">
+                    </form>
+                </div>
             </div>
-        
+
             <div id="hide">
-              <div id="results"></div>
-              <button type="button" id="seeResults" class="ans" name="button">View Answers</button>
+                <div id="results"></div>
+                <button type="button" id="seeResults" class="ans" name="button">View Answers</button>
             </div>
-          </div>
-          <div class="container">
+        </div>
+        <div class="">
             <div id="answers">
-              <div class="form-group">
-                <form id=>
-                  <h4>Answers</h4>
-        
-                  1. <label for="Quiz1">IsNaN() Evaluates And Argument To Determine if Given Value:
-                    <strong>(1mk)</strong></label><br>
-                  <input type="radio" name="Quiz1" value="0" disabled>Is Not a Null <br>
-                  <input type="radio" name="Quiz1" value="1" checked>Is Not a Number <br>
-                  <input type="radio" name="Quiz1" value="0" disabled>Is Not a New Object <br>
-                  <input type="radio" name="Quiz1" value="0" disabled>None Of The Above <br>
-                  2. <label for="Quiz2">If Button is clicked .......Event Handler is invoked.<strong>(1mk)</strong></label><br>
-                  <input type="radio" name="Quiz2" value="0" disabled>OnSubmit() <br>
-                  <input type="radio" name="Quiz2" value="1" checked>Onclick() <br>
-                  <input type="radio" name="Quiz2" value="0" disabled>OnLoad()() <br>
-                  <input type="radio" name="Quiz2" value="0" disabled>IsPostBack() <br>
-                  
-                  3. <label for="Quiz3">A Function Associated With An object is Called:<strong>(1mk)</strong></label><br>
-                  <input type="radio" name="Quiz3" value="1" checked>Method <br>
-                  <input type="radio" name="Quiz3" value="0" disabled>Function <br>
-                  <input type="radio" name="Quiz3" value="0" disabled>Link<br>
-                  <input type="radio" name="Quiz3" value="0" disabled>None<br>
-        
-                  4. <label for="Quiz4">Method Prompt() Contain ........Number of Parameters. <strong>(1mk)</strong></label><br>
-                  <input type="radio" name="Quiz4" value="0" disabled>One <br>
-                  <input type="radio" name="Quiz4" value="1" checked>TWO <br>
-                  <input type="radio" name="Quiz4" value="0" disabled>Three <br>
-                  <input type="radio" name="Quiz4" value="0" disabled>Zero <br>
-        
-                  5. <label for="Quiz5">JavaScript File Has An Extension of:<strong>(1mk)</strong></label><br>
-                  <input type="radio" name="Quiz5" value="0" disabled>.javascript<br>
-                  <input type="radio" name="Quiz5" value="0" disabled>.script<br>
-                  <input type="radio" name="Quiz5" value="0" disabled>.java<br>
-                  <input type="radio" name="Quiz5" value="1" checked>.js
-                </form>
-        
-              </div>
+                <div class="form-group">
+                    <form id=>
+                        <h4>Answers</h4>
+
+                        1. <label for="Quiz1">IsNaN() Evaluates And Argument To Determine if Given Value:
+                            <strong>(1mk)</strong></label><br>
+                        <input type="radio" name="Quiz1" value="0" disabled>Is Not a Null <br>
+                        <input type="radio" name="Quiz1" value="1" checked>Is Not a Number <br>
+                        <input type="radio" name="Quiz1" value="0" disabled>Is Not a New Object <br>
+                        <input type="radio" name="Quiz1" value="0" disabled>None Of The Above <br>
+                        2. <label for="Quiz2">If Button is clicked .......Event Handler is
+                            invoked.<strong>(1mk)</strong></label><br>
+                        <input type="radio" name="Quiz2" value="0" disabled>OnSubmit() <br>
+                        <input type="radio" name="Quiz2" value="1" checked>Onclick() <br>
+                        <input type="radio" name="Quiz2" value="0" disabled>OnLoad()() <br>
+                        <input type="radio" name="Quiz2" value="0" disabled>IsPostBack() <br>
+
+                        3. <label for="Quiz3">A Function Associated With An object is
+                            Called:<strong>(1mk)</strong></label><br>
+                        <input type="radio" name="Quiz3" value="1" checked>Method <br>
+                        <input type="radio" name="Quiz3" value="0" disabled>Function <br>
+                        <input type="radio" name="Quiz3" value="0" disabled>Link<br>
+                        <input type="radio" name="Quiz3" value="0" disabled>None<br>
+
+                        4. <label for="Quiz4">Method Prompt() Contain ........Number of Parameters.
+                            <strong>(1mk)</strong></label><br>
+                        <input type="radio" name="Quiz4" value="0" disabled>One <br>
+                        <input type="radio" name="Quiz4" value="1" checked>TWO <br>
+                        <input type="radio" name="Quiz4" value="0" disabled>Three <br>
+                        <input type="radio" name="Quiz4" value="0" disabled>Zero <br>
+
+                        5. <label for="Quiz5">JavaScript File Has An Extension of:<strong>(1mk)</strong></label><br>
+                        <input type="radio" name="Quiz5" value="0" disabled>.javascript<br>
+                        <input type="radio" name="Quiz5" value="0" disabled>.script<br>
+                        <input type="radio" name="Quiz5" value="0" disabled>.java<br>
+                        <input type="radio" name="Quiz5" value="1" checked>.js
+                    </form>
+
+                </div>
             </div>
-          </div>
-          <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-          <script type="text/javascript" src="js/scripts.js">
-          </script>
+        </div>
 
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script type="text/javascript" src="js/script.js">
+        </script>
 
-
-
-
-
-
-
-    </form>
-    
 </body>
+
 </html>
