@@ -32,7 +32,7 @@ $(document).ready(function(){
       console.log('You have excellently passed')
       document.getElementById('Remarks').value = 'You have excellently passed'
     }
-    else if(score>=50 && score<80){
+    else if (score>=50 && score<80){
       console.log('You have fairly Passed')
       document.getElementById('Remarks').value  = 'You have fairly Passed'
     }
